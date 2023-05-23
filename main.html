@@ -12,30 +12,22 @@
 </script>
 
 <form method="post">
-	<h1>Feedback Form</h1>
-	<div>
-	<label for="name">Name</label>
-	<input type="text" name="name" id="name" maxlength="100" min="3" required>
-	</div>
-	
-	<div>
-		<a href="#" id="portfolio">user's </a>
-	</div>
-	
-	<div>
-		<label for="favColor">Color</label>
-		<input type="color" name="favColor" id="favColor" required>
-		
-	</div>
-
-	<div>
-		<label for="likeness"></label>
-		<input type="range" min="1" maxlength="100">
-		
-	</div>
-
-	<button type="button">Submit</button>
-</form>	
+  <label for="name">Your name</label>
+  <input type="text" id="name" minlength="3" maxlength="50" required />
+  <br />
+  <label for="portfolio">You portfolio</label>
+  <input type="url" id="portfolio" required />
+  <br />
+  <label for="favColor">Your fav color</label>
+  <input type="color" id="favColor" />
+  <br />
+  <label for="likeness">From one to hundred choose likeness</label>
+  <input type="range" id="likeness" min="1" max="100" />
+  <br />
+  <button type="submit">Submit</button>
+  <br />
+  <button type="reset">Reset form</button>
+</form>
 	
 </body>
 
